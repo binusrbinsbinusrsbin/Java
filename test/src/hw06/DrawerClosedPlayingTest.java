@@ -14,7 +14,7 @@ public class DrawerClosedPlayingTest{
 		DrawerClosedPlaying instance1=DrawerClosedPlaying.getInstance();
 		DrawerClosedPlaying instance2=DrawerClosedPlaying.getInstance();
 
-		assertEquals(instance1, instance2);
+		assertSame(instance1, instance2);
 	}
 
 	@Test
