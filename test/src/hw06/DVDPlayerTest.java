@@ -10,7 +10,7 @@ public class DVDPlayerTest{
 
 		DVDPlayer instance1=DVDPlayer.getInstance();
 		DVDPlayer instance2=DVDPlayer.getInstance();
-		assertEquals(instance1, instance2);
+		assertSame(instance1, instance2);
 	}
 
 	@Test
